@@ -1,0 +1,275 @@
+/* theme color */
+
+:root {
+  --theme-color: var(--theme-color);
+  --font-color: var(--font-color);
+
+}
+
+.btn-color {
+  background: var(--theme-color, #495057) !important;
+}
+
+.text-color {
+  color: var(--font-color, #fff) !important;
+}
+
+body {
+  font-family: "Poppins", sans-serif !important;
+}
+
+
+/* Sidebar container */
+.custom-sidebar {
+  width: 180px !important;
+  /* Fixed width */
+  max-width: 240px !important;
+  height: 100vh;
+  /* Full height */
+  background-color: #fff;
+  /* Background */
+  border-right: 1px solid #e9ecef;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar/Nav wrapper inside sidebar */
+.custom-sidebar .nav {
+  width: 100%;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+/* Sidebar links */
+.nav-link.sidebar-link {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px 16px;
+  border-bottom: 1px solid #e9ecef;
+  color: var(--theme-color);
+  /* inactive text color */
+  font-size: 15px;
+  font-weight: 100;
+  text-decoration: none;
+  transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+/* Sidebar link icons */
+.nav-link.sidebar-link i {
+  font-size: 18px;
+  color: var(--theme-color);
+  /* inactive icon color */
+  margin-right: 10px;
+  min-width: 20px;
+  text-align: center;
+}
+
+/* Hover effect */
+.nav-link.sidebar-link:hover {
+  background-color: #f8f9fa;
+  /* light hover background */
+  color: var(--theme-color);
+  /* Bootstrap primary color */
+}
+
+/* Hover: icon color change */
+.nav-link.sidebar-link:hover i {
+  color: var(--theme-color);
+}
+
+/* Active link style */
+.nav-link.sidebar-link.active {
+  background-color: #e9f2ff;
+  /* subtle active background */
+  color: var(--theme-color);
+  font-weight: 600;
+}
+
+.nav-link.sidebar-link.active i {
+  color: var(--theme-color);
+}
+
+/* Remove border for last item */
+.nav-link.sidebar-link:last-child {
+  border-bottom: none;
+}
+
+.card {
+  border-color: white !important;
+  background-color: white !important;
+}
+
+.no-caret::after {
+  display: none !important;
+}
+
+
+/* Table header background and text color */
+.table thead th {
+  background-color: #cccfd3;
+  /* Bootstrap primary blue */
+  color: rgb(26, 25, 25);
+  font-weight: 600;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.table tbody td {
+  font-weight: 100;
+  color: #495057;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Page Wrapper */
+.login-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(310deg, #344767, #17c1e8);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Card */
+.login-card {
+  background: white;
+  padding: 2rem 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Logo */
+.login-logo img {
+  height: 50px;
+  margin-bottom: 1rem;
+}
+
+/* Titles */
+.login-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #344767;
+}
+
+.login-subtitle {
+  font-size: 0.9rem;
+  color: #8392ab;
+  margin-bottom: 2rem;
+}
+
+/* Inputs */
+.form-group {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #344767;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #17c1e8;
+  box-shadow: 0 0 5px rgba(23, 193, 232, 0.5);
+}
+
+/* Error */
+.error-text {
+  font-size: 0.8rem;
+  color: red;
+}
+
+/* Options */
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  font-size: 0.85rem;
+}
+
+/* Button */
+.btn-submit {
+  width: 100%;
+  padding: 0.9rem;
+  background: linear-gradient(310deg, #344767, #17c1e8);
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.btn-submit:hover {
+  transform: translateY(-2px);
+}
+
+/* Footer */
+.login-footer {
+  font-size: 0.85rem;
+  margin-top: 1.5rem;
+}
+
+.login-footer a {
+  color: #17c1e8;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+
+/* Wrapper to push button to bottom */
+.sidebar-bottom-btn-wrapper {
+  position: absolute;
+  bottom: 100px;
+  left: 6%;
+  transform: translateX(-50%);
+}
+
+/* Rotating button styles */
+.sidebar-bottom-btn {
+  background-color: #495057;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: rotateBtn 4s linear infinite;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sidebar-bottom-btn:hover {
+  background-color: #495057;
+}
+
+@keyframes rotateBtn {
+  from {
+    transform: translateX(-50%) rotate(0deg);
+  }
+
+  to {
+    transform: translateX(-50%) rotate(360deg);
+  }
+}

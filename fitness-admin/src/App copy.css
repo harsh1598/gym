@@ -1,0 +1,202 @@
+/* theme color */
+
+:root {
+    /* Default light theme */
+    /* BLUE */
+    /* --theme-color: linear-gradient(to right, #141727, #3A416F);  */
+
+    /* Red */
+    /* --theme-color: linear-gradient(to right, #dd4e41, #f12020); red */
+
+    /* pink */
+    /* --theme-color: linear-gradient(310deg, #cb0c9f 0%, #cb0c9f 100%);  */
+
+    /* secondary */
+    /* --theme-color: linear-gradient(310deg, #8392AB 0%, #8392AB 100%);  */
+
+    /* dark */
+    /* --theme-color: linear-gradient(310deg, #344767 0%, #344767 100%);  */
+    /* Default light theme */
+
+    --theme-color: var(--theme-color);
+
+}
+
+/* .bg-gradient-dark {
+    background: var(--theme-color) !important;
+} */
+
+.bg-gradient-dark_theme {
+    background: var(--theme-color) !important;
+}
+
+.btn-primary {
+    background: var(--theme-color) !important;
+}
+
+.navbar-nav>.nav-item>.nav-link.active .icon {
+    background-image: var(--theme-color) !important;
+}
+
+.pagination.pagination-primary .page-item.active>.page-link,
+.pagination.pagination-primary .page-item.active>.page-link:focus,
+.pagination.pagination-primary .page-item.active>.page-link:hover {
+    background-image: var(--theme-color) !important;
+    border: none;
+    color: #fff;
+}
+
+
+/* --------------------------------  */
+
+/* offcanvas */
+
+.offcanvas.size-sm {
+    width: 450px;
+}
+
+.offcanvas.size-md {
+    width: 650px !important;
+}
+
+.offcanvas.size-l {
+    width: 950px !important;
+}
+
+.offcanvas.size-lg {
+    width: 1320px !important;
+}
+
+.offcanvas.size-xl {
+    width: calc(100vw - 200px) !important;
+}
+
+/* --------------------------------  */
+
+/* UPLOAD BTN */
+.uploadBtn input {
+    color: #fff;
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.uploadBtn {
+    position: relative;
+    overflow: hidden;
+    padding: 6px 10px;
+    text-align: center;
+    color: #ffffff;
+    height: 38px;
+    line-height: 22px;
+    border-radius: 3px;
+}
+
+.uploadBtnFile input {
+    color: #00acee;
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.uploadBtnFile {
+    position: relative;
+    overflow: hidden;
+    padding: 10px 15px;
+    text-align: center;
+    color: #00acee;
+    height: 46px;
+    line-height: 25px;
+    border-radius: 3px;
+}
+
+/* --------------------------------  */
+/* submit button loader */
+.button-loader {
+    height: 15px !important;
+    margin-right: 5px !important;
+}
+
+/* Fix dropdown overflow issue on smaller screens */
+.dropdown-menu {
+    right: 0;
+    left: auto;
+}
+
+.text-gradient {
+    background: linear-gradient(to right, #1b1e21, #00d4ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.text-gradient2 {
+    background: linear-gradient(to right, #c83763, #c83763);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.bg-color {
+    background-color: #191c24 !important;
+    /*  #141727 0%, #3A416F 100% */
+    background: linear-gradient(to right, #141727, #3A416F);
+}
+
+.main-content {
+    min-height: calc(100vh - 10px);
+    /* Adjust this value based on your header height */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Login */
+
+.background-image {
+    background-image: url('./assets/img/curved-images/Login_bg.jpg');
+    /* Path to your background image */
+    background-size: cover;
+    /* Ensures the image covers the entire div */
+    background-position: center;
+    /* Centers the image */
+    background-repeat: no-repeat;
+}
+
+/* Profile Page */
+
+.profile-background-image {
+    background-image: url('./assets/img/curved-images/Login_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 50px;
+}
+
+/* Footer Page */
+
+.footer {
+    background-color: #f8f9fa;
+    /* Change this to your preferred footer color */
+    position: relative;
+    /* Make it relative to maintain its flow in the document */
+}
+
+/* Ensure dropdown doesn't go off-screen on mobile */
+@media (max-width: 576px) {
+    .dropdown-menu {
+        width: 100%;
+        /* Make sure dropdown fits within the screen on small devices */
+        position: absolute;
+        right: 0;
+        left: 0;
+        /* Center it on smaller screens */
+    }
+
+}
